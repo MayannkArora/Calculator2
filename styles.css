@@ -1,0 +1,26 @@
+#grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0.5rem;
+    padding-bottom: 1rem;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    min-width: 30%;
+    height: 70%;
+    margin-top: 10%;
+    gap: 1rem;
+    background-color: hotpink;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#numbers{
+    min-width: 35rem;
+    margin-top: 1rem;
+    flex-shrink: 0;
+}
+
