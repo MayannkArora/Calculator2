@@ -29,21 +29,16 @@ const reset = (e) =>{
     e.value="";
 } 
 
-const updateNum1 = (e) => {
-        num1.innerText += e;
+const update = (element,e) => {
+    element.innerText += e;
 }
-
-const updateNum2 = (e) =>{
-    num2.innerText += e;
-}
-
 
 numbers.forEach((e)=>{
     let nums = document.createElement('button');
     nums.innerText = e;
     grid.appendChild(nums);
     nums.addEventListener('click',()=>{
-        updateNum1(e);
+        
     });
 })
 
